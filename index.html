@@ -33,36 +33,71 @@
     </header>
 
     <div class="container">
-      <div class="calculation-container">
-        <!-- <p class="titles">Bill</p> -->
-        <label>Bill</label>
-        <input type="number" id="billAmount" />
-
-        <label>Select Tip %</label>
-        <div class="percentages">
-          <button>5%</button>
-          <button>10%</button>
-          <button>15%</button>
-          <button>25%</button>
-          <button>50%</button>
-          <button>Custom</button>
-        </div>
-
-        <div class="people">
-          <label>Number of People</label>
-          <input type="number" id="partyCount">
+      <div class="test">              
+        <div class="calculation-container">
+          <!-- <p class="titles">Bill</p> -->
+          <div>
+            <label>Bill</label>
+            <input type="number" id="billAmount" />
+          </div>
+  
+          <label>Select Tip %</label>
+          <div class="percentages">
+            <button id="5">5%</button>
+            <button id="10">10%</button>
+            <button id="15">15%</button>
+            <button id="25">25%</button>
+            <button id="50">50%</button>
+            <div id="buttonContainer">
+              <input id="custom" placeholder="Custom" type="number"></input>
+            </div>
+          </div>
+  
+          <div class="people">
+            <label id="cat">Number of People</label>
+            <span id="error">Can't be zero</span>
+            <input type="number" id="partyCount" required="true" />
+          </div>
         </div>
       </div>
-      <div class="result-container">
-        Tip Amount / person Total / person Reset
+
+      <div class="results">
+        <div class="result-container">
+          <div class="calculations">
+            <div class="calculation-labels">
+              <label>Tip Amount</label>
+              <div>/ person</div>
+            </div>
+            <div class="amount">
+              <span id="tipAmount">$0.00</span>
+            </div>
+          </div>
+          <div class="calculations">
+            <div class="calculation-labels">
+              <label>Total</label>
+              <div>/ person</div>
+            </div>
+            <div class="amount">
+              <span id="totalPerPerson">$0.00</span>
+            </div>
+          </div>
+          <div id="reset-container">
+            <button id="reset">Reset</button>
+          </div>
+        </div>
       </div>
+
     </div>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Javier Barrera</a>.
-    </div>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Javier Barrera</a>.
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
