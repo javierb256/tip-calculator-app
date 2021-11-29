@@ -51,7 +51,6 @@ const formatter = new Intl.NumberFormat('en-US', {
 });
 
 function tipConversion(tipPercent){
-    console.log("TipPercent: " + tipPercent)
     people = document.getElementById("partyCount").value; 
     bill = parseFloat(document.getElementById("billAmount").value);
     tipAmount = bill * tipPercent;
