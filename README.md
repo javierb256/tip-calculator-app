@@ -28,7 +28,7 @@ Users should be able to:
 
 ![page screenshot](images/Screenshot-Tip-calculator-app.png)
 
-- Live Site URL:(https://tip-calculator-app-tau.vercel.app/)
+- Live Site URL: [https://javierb256.github.io/tip-calculator-app/](https://javierb256.github.io/tip-calculator-app/)
 
 ## My process
 
