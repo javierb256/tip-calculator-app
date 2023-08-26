@@ -25,61 +25,63 @@
     <header>
       <img src="images/logo.svg" alt="website logo" />
     </header>
-
-    <div class="container">
-      <div class="calculation-overview">              
-        <div class="calculation-container">
-          <div>
-            <label>Bill</label>
-            <input type="number" id="billAmount" />
-          </div>
-  
-          <label>Select Tip %</label>
-          <div class="percentages">
-            <button id="5">5%</button>
-            <button id="10">10%</button>
-            <button id="15">15%</button>
-            <button id="25">25%</button>
-            <button id="50">50%</button>
-            <div id="buttonContainer">
-              <input id="custom" placeholder="Custom" type="number"></input>
+    
+    <main>
+      <div class="container">
+        <div class="calculation-overview">              
+          <div class="calculation-container">
+            <div>
+              <label for="billAmount">Bill</label>
+              <input type="number" id="billAmount" name="billAmount"/>
             </div>
-          </div>
-  
-          <div class="people">
-            <label id="peopleLabel">Number of People</label>
-            <span id="error">Can't be zero</span>
-            <input type="number" id="partyCount" required="true" />
+    
+            <label>Select Tip %</label>
+            <div class="percentages">
+              <button id="5">5%</button>
+              <button id="10">10%</button>
+              <button id="15">15%</button>
+              <button id="25">25%</button>
+              <button id="50">50%</button>
+              <div id="buttonContainer">
+                <input id="custom" placeholder="Custom" type="number"></input>
+              </div>
+            </div>
+    
+            <div class="people">
+              <label id="peopleLabel" for="partyCount">Number of People</label>
+              <span id="error">Can't be zero</span>
+              <input type="number" id="partyCount" required="true" name="partyCount"/>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="results">
-        <div class="result-container">
-          <div class="calculations">
-            <div class="calculation-labels">
-              <label>Tip Amount</label>
-              <div>/ person</div>
+  
+        <div class="results">
+          <div class="result-container">
+            <div class="calculations">
+              <div class="calculation-labels">
+                <label>Tip Amount</label>
+                <div>/ person</div>
+              </div>
+              <div class="amount">
+                <span id="tipAmount">$0.00</span>
+              </div>
             </div>
-            <div class="amount">
-              <span id="tipAmount">$0.00</span>
+            <div class="calculations">
+              <div class="calculation-labels">
+                <label>Total</label>
+                <div>/ person</div>
+              </div>
+              <div class="amount">
+                <span id="totalPerPerson">$0.00</span>
+              </div>
             </div>
-          </div>
-          <div class="calculations">
-            <div class="calculation-labels">
-              <label>Total</label>
-              <div>/ person</div>
+            <div id="reset-container">
+              <button id="reset">Reset</button>
             </div>
-            <div class="amount">
-              <span id="totalPerPerson">$0.00</span>
-            </div>
-          </div>
-          <div id="reset-container">
-            <button id="reset">Reset</button>
           </div>
         </div>
-      </div>
-    </div>
+      </div>    
+    </main>
 
     <footer>
       <div class="attribution">
